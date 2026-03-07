@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/------t";
 import PageHeader from "../components/shared/PageHeader";
 import { Check, ChevronRight, Loader2, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { toast } from "sonner";
 
-export default function ContactPage() {
+export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -23,10 +21,9 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await ------.entities.Contact.create(form);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setIsSubmitted(true);
-    toast.success("お問い合わせを受け付けました！");
   };
 
   return (
@@ -40,6 +37,7 @@ export default function ContactPage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -114,49 +112,26 @@ export default function ContactPage() {
                         <label className="text-sm font-medium text-gray-700 mb-1.5 block">
                           お名前 <span className="text-red-500">*</span>
                         </label>
-                        <Input
-                          required
-                          placeholder="山田 太郎"
-                          value={form.name}
-                          onChange={(e) => setForm({ ...form, name: e.target.value })}
-                          className="h-12 bg-white"
-                        />
+                        <Input required placeholder="山田 太郎" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="h-12 bg-white" />
                       </div>
                       <div>
                         <label className="text-sm font-medium text-gray-700 mb-1.5 block">
                           メールアドレス <span className="text-red-500">*</span>
                         </label>
-                        <Input
-                          required
-                          type="email"
-                          placeholder="email@example.com"
-                          value={form.email}
-                          onChange={(e) => setForm({ ...form, email: e.target.value })}
-                          className="h-12 bg-white"
-                        />
+                        <Input required type="email" placeholder="email@example.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="h-12 bg-white" />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="text-sm font-medium text-gray-700 mb-1.5 block">電話番号</label>
-                        <Input
-                          type="tel"
-                          placeholder="090-1234-5678"
-                          value={form.phone}
-                          onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                          className="h-12 bg-white"
-                        />
+                        <Input type="tel" placeholder="090-1234-5678" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="h-12 bg-white" />
                       </div>
                       <div>
                         <label className="text-sm font-medium text-gray-700 mb-1.5 block">
                           お問い合わせ種別 <span className="text-red-500">*</span>
                         </label>
-                        <Select
-                          value={form.inquiry_type}
-                          onValueChange={(value) => setForm({ ...form, inquiry_type: value })}
-                          required
-                        >
+                        <Select value={form.inquiry_type} onValueChange={(value) => setForm({ ...form, inquiry_type: value })}>
                           <SelectTrigger className="h-12 bg-white">
                             <SelectValue placeholder="選択してください" />
                           </SelectTrigger>
@@ -174,28 +149,14 @@ export default function ContactPage() {
                       <label className="text-sm font-medium text-gray-700 mb-1.5 block">
                         お問い合わせ内容 <span className="text-red-500">*</span>
                       </label>
-                      <Textarea
-                        required
-                        placeholder="お問い合わせ内容をご記入ください"
-                        value={form.message}
-                        onChange={(e) => setForm({ ...form, message: e.target.value })}
-                        rows={5}
-                        className="bg-white"
-                      />
+                      <Textarea required placeholder="お問い合わせ内容をご記入ください" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={5} className="bg-white" />
                     </div>
 
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full sm:w-auto h-12 px-10 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full text-sm"
-                    >
+                    <Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto h-12 px-10 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full text-sm">
                       {isSubmitting ? (
                         <Loader2 className="w-5 h-5 animate-spin" />
                       ) : (
-                        <>
-                          送信する
-                          <ChevronRight className="w-4 h-4 ml-2" />
-                        </>
+                        <>送信する <ChevronRight className="w-4 h-4 ml-2" /></>
                       )}
                     </Button>
                   </form>
