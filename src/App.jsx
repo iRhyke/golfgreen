@@ -6,6 +6,8 @@ import Simulator from "./pages/Simulator";
 import Pricing from "./pages/Pricing";
 import Access from "./pages/Access";
 import Faq from "./pages/Faq";
+import Trial from "./pages/Trial";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/access" element={<Access />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/trial" element={<Trial />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </Router>
