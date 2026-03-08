@@ -8,6 +8,9 @@ import Access from "./pages/Access";
 import Faq from "./pages/Faq";
 import Trial from "./pages/Trial";
 import Contact from "./pages/Contact";
+import Tokushoho from "./pages/Tokushoho";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/trial" element={<Trial />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tokushoho" element={<Tokushoho />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </Layout>
     </Router>
