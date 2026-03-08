@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "ホーム", page: "Home" },
-  { name: "施設紹介", page: "Facility" },
-  { name: "シミュレーター", page: "Simulator" },
-  { name: "料金プラン", page: "Pricing" },
-  { name: "体験・入会", page: "Trial" },
-  { name: "アクセス", page: "Access" },
-  { name: "よくある質問", page: "Faq" },
-  { name: "お問い合わせ", page: "ContactPage" },
+  { name: "ホーム", href: "/" },
+  { name: "施設紹介", href: "/facility" },
+  { name: "シミュレーター", href: "/simulator" },
+  { name: "料金プラン", href: "/pricing" },
+  { name: "体験・入会", href: "/trial" },
+  { name: "アクセス", href: "/access" },
+  { name: "よくある質問", href: "/faq" },
+  { name: "お問い合わせ", href: "/contact" },
 ];
 
-export default function Layout({ children, currentPageName }) {
+export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -27,9 +28,7 @@ export default function Layout({ children, currentPageName }) {
 
   useEffect(() => {
     setIsOpen(false);
-  }, [currentPageName]);
-
-  const isHome = currentPageName === "Home";
+  }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -42,23 +41,17 @@ export default function Layout({ children, currentPageName }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <Link
-              to={createPageUrl("Home")}
-              className="flex items-center gap-2"
-            >
+
+            <Link to="/" className="flex items-center gap-2">
               <div className="flex items-center">
-                <div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                    scrolled || !isHome ? "bg-[#1B5E3B]" : "bg-white/20 backdrop-blur-sm"
-                  }`}
-                >
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                  scrolled || !isHome ? "bg-[#1B5E3B]" : "bg-white/20 backdrop-blur-sm"
+                }`}>
                   <span className="text-white font-bold text-sm">G</span>
                 </div>
-                <span
-                  className={`ml-2 text-lg font-semibold tracking-tight ${
-                    scrolled || !isHome ? "text-[#111111]" : "text-white"
-                  }`}
-                >
+                <span className={`ml-2 text-lg font-semibold tracking-tight ${
+                  scrolled || !isHome ? "text-[#111111]" : "text-white"
+                }`}>
                   Golf Green
                 </span>
               </div>
@@ -67,10 +60,10 @@ export default function Layout({ children, currentPageName }) {
             <nav className="hidden lg:flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
-                  key={item.page}
-                  to={createPageUrl(item.page)}
+                  key={item.href}
+                  to={item.href}
                   className={`px-3 py-2 text-[13px] font-medium rounded-md transition-colors ${
-                    currentPageName === item.page
+                    location.pathname === item.href
                       ? scrolled || !isHome
                         ? "text-[#1B5E3B] bg-[#1B5E3B]/5"
                         : "text-white bg-white/15"
@@ -83,8 +76,8 @@ export default function Layout({ children, currentPageName }) {
                 </Link>
               ))}
               <Link
-                to={createPageUrl("Trial")}
-                className="ml-3 px-5 py-2.5 bg-[#C8A96E] hover:bg-[#b8995e] text-white text-[13px] font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-[#C8A96E]/25"
+                to="/trial"
+                className="ml-3 px-5 py-2.5 bg-[#C8A96E] hover:bg-[#b8995e] text-white text-[13px] font-semibold rounded-full transition-all hover:shadow-lg"
               >
                 体験予約
               </Link>
@@ -112,10 +105,10 @@ export default function Layout({ children, currentPageName }) {
               <div className="px-4 py-4 space-y-1">
                 {navItems.map((item) => (
                   <Link
-                    key={item.page}
-                    to={createPageUrl(item.page)}
+                    key={item.href}
+                    to={item.href}
                     className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                      currentPageName === item.page
+                      location.pathname === item.href
                         ? "text-[#1B5E3B] bg-[#1B5E3B]/5"
                         : "text-gray-600 hover:bg-gray-50"
                     }`}
@@ -124,7 +117,7 @@ export default function Layout({ children, currentPageName }) {
                   </Link>
                 ))}
                 <Link
-                  to={createPageUrl("Trial")}
+                  to="/trial"
                   className="block mt-3 px-4 py-3 bg-[#C8A96E] text-white text-center text-sm font-semibold rounded-full"
                 >
                   体験予約はこちら
@@ -148,9 +141,7 @@ export default function Layout({ children, currentPageName }) {
                 <span className="text-lg font-semibold">Golf Green</span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed">
-                高針インター店
-                <br />
-                24時間営業のインドアゴルフ施設
+                高針インター店<br />24時間営業のインドアゴルフ施設
               </p>
             </div>
 
@@ -158,11 +149,8 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-sm font-semibold mb-4 text-[#C8A96E]">ページ</h4>
               <ul className="space-y-2.5">
                 {navItems.slice(0, 4).map((item) => (
-                  <li key={item.page}>
-                    <Link
-                      to={createPageUrl(item.page)}
-                      className="text-white/60 text-sm hover:text-white transition-colors"
-                    >
+                  <li key={item.href}>
+                    <Link to={item.href} className="text-white/60 text-sm hover:text-white transition-colors">
                       {item.name}
                     </Link>
                   </li>
@@ -174,11 +162,8 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-sm font-semibold mb-4 text-[#C8A96E]">サポート</h4>
               <ul className="space-y-2.5">
                 {navItems.slice(4).map((item) => (
-                  <li key={item.page}>
-                    <Link
-                      to={createPageUrl(item.page)}
-                      className="text-white/60 text-sm hover:text-white transition-colors"
-                    >
+                  <li key={item.href}>
+                    <Link to={item.href} className="text-white/60 text-sm hover:text-white transition-colors">
                       {item.name}
                     </Link>
                   </li>
@@ -206,8 +191,8 @@ export default function Layout({ children, currentPageName }) {
 
       <div className="fixed bottom-6 right-6 z-40 lg:hidden">
         <Link
-          to={createPageUrl("Trial")}
-          className="flex items-center gap-2 px-5 py-3 bg-[#C8A96E] text-white text-sm font-semibold rounded-full shadow-xl shadow-[#C8A96E]/30 hover:bg-[#b8995e] transition-all"
+          to="/trial"
+          className="flex items-center gap-2 px-5 py-3 bg-[#C8A96E] text-white text-sm font-semibold rounded-full shadow-xl hover:bg-[#b8995e] transition-all"
         >
           <Phone className="w-4 h-4" />
           体験予約
