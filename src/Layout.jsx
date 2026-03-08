@@ -52,7 +52,7 @@ export default function Layout({ children }) {
                 <span className={`ml-2 text-lg font-semibold tracking-tight ${
                   scrolled || !isHome ? "text-[#111111]" : "text-white"
                 }`}>
-                  Golf Green
+                  ゴルフサロングリーン 高針インター店
                 </span>
               </div>
             </Link>
