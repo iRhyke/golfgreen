@@ -64,8 +64,8 @@ export default function Pricing() {
 
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {plans.map((plan, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {plans.filter(plan => plan.name === "オールタイム" || plan.name === "オールタイムゴールド").map((plan, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function Pricing() {
                 transition={{ delay: index * 0.08 }}
                 className={`relative p-8 rounded-2xl border transition-all ${
                   plan.popular
-                    ? "bg-[#0F3D25] text-white border-transparent shadow-2xl shadow-[#0F3D25]/20 lg:scale-105"
+                    ? "bg-[#0F3D25] text-white border-transparent shadow-2xl shadow-[#0F3D25]/20"
                     : "bg-white border-gray-200 hover:border-gray-300 hover:shadow-lg"
                 }`}
               >
@@ -86,16 +86,13 @@ export default function Pricing() {
                     </span>
                   </div>
                 )}
-
                 <h3 className={`text-sm font-semibold ${plan.popular ? "text-[#C8A96E]" : "text-gray-500"}`}>
                   {plan.name}
                 </h3>
-
                 <div className="mt-4 flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">¥{plan.price}</span>
+                  <span className="text-5xl font-bold">¥{plan.price}</span>
                   <span className={`text-sm ${plan.popular ? "text-white/60" : "text-gray-400"}`}>/月（税込）</span>
                 </div>
-
                 <div className={`mt-6 space-y-2 text-sm ${plan.popular ? "text-white/70" : "text-gray-500"}`}>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 flex-shrink-0" />
@@ -103,7 +100,6 @@ export default function Pricing() {
                   </div>
                   <p>{plan.slots} / {plan.limit}</p>
                 </div>
-
                 <div className="mt-6 pt-6 border-t border-dashed border-gray-200/30">
                   <ul className="space-y-3">
                     {plan.features.map((feature, i) => (
@@ -114,14 +110,55 @@ export default function Pricing() {
                     ))}
                   </ul>
                 </div>
-
                 <Link
-                  to={createPageUrl("Trial")}
+                  to="/trial"
                   className={`mt-8 block text-center py-3 rounded-full font-semibold text-sm transition-all ${
                     plan.popular
                       ? "bg-[#C8A96E] hover:bg-[#b8995e] text-white"
                       : "bg-[#1B5E3B] hover:bg-[#0F3D25] text-white"
                   }`}
+                >
+                  このプランで始める
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {plans.filter(plan => plan.name === "ライトプラン" || plan.name === "平日デイタイム" || plan.name === "ナイトタイム").map((plan, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.08 }}
+                className="relative p-6 rounded-2xl border bg-white border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all"
+              >
+                <h3 className="text-sm font-semibold text-gray-500">{plan.name}</h3>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="text-4xl font-bold">¥{plan.price}</span>
+                  <span className="text-sm text-gray-400">/月（税込）</span>
+                </div>
+                <div className="mt-4 space-y-2 text-sm text-gray-500">
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 flex-shrink-0" />
+                    <span>{plan.time}</span>
+                  </div>
+                  <p>{plan.slots} / {plan.limit}</p>
+                </div>
+                <div className="mt-4 pt-4 border-t border-dashed border-gray-200">
+                  <ul className="space-y-2">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <Check className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#1B5E3B]" />
+                        <span className="text-sm text-gray-600">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Link
+                  to="/trial"
+                  className="mt-6 block text-center py-3 rounded-full font-semibold text-sm transition-all bg-[#1B5E3B] hover:bg-[#0F3D25] text-white"
                 >
                   このプランで始める
                 </Link>
