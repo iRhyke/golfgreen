@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Facility from "./pages/Facility";
@@ -23,6 +24,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
