@@ -16,35 +16,35 @@ export default function CTASection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F3D25] leading-tight">
-            まずは体験から
-            <br />
-            <span className="text-[#C8A96E]">はじめてみませんか？</span>
+          viewport={{ once: true }}>
+
+          <h2 className="text-[#0F3D25] text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">まずは体験から
+はじめてみませんか？
+
+
           </h2>
-          <p className="mt-6 text-[#0F3D25]/70 text-base sm:text-lg max-w-xl mx-auto">
-            初めての方でも安心。スタッフが丁寧にサポートします。
-            <br />
-            最高の環境で、ゴルフの新しい楽しみを見つけてください。
+          <p className="text-[#0F3D25] mt-6 mx-auto text-base sm:text-lg max-w-xl">初めての方でも安心。スタッフが丁寧にサポートします。
+最高の環境で、ゴルフの新しい楽しみを見つけてください。
+
+
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <Link
               to={createPageUrl("Trial")}
-              className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-[#0F3D25] font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base"
-            >
+              className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base">
+
               無料体験を予約する
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to={createPageUrl("ContactPage")}
-              className="flex items-center gap-2 px-8 py-4 border border-white/30 text-[#0F3D25] font-medium rounded-full hover:bg-white/10 transition-all text-base"
-            >
+              to={createPageUrl("ContactPage")} className="bg-[#FAFAFA] text-[#0F3D25] px-8 py-4 text-base font-medium rounded-full flex items-center gap-2 border border-white/30 hover:bg-white/10 transition-all">
+
+
               お問い合わせ
             </Link>
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
