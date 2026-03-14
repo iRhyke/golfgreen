@@ -12,6 +12,14 @@ import Tokushoho from "./pages/Tokushoho";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 export default function App() {
   return (
     <Router>
