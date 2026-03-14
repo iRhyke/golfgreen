@@ -183,32 +183,26 @@ export default function Layout({ children }) {
 
           <div className="border-t border-white/10 mt-12 pt-8 text-center space-y-3">
             <div className="flex items-center justify-center gap-4 flex-wrap">
-              <a
-                href="https://golfgreen.jp/terms.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/terms"
                 className="text-white/40 text-xs hover:text-white/70 transition-colors"
               >
                 利用規約
-              </a>
+              </Link>
               <span className="text-white/20 text-xs">|</span>
-              <a
-                href="https://golfgreen.jp/privacy.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/privacy"
                 className="text-white/40 text-xs hover:text-white/70 transition-colors"
               >
                 プライバシーポリシー
-              </a>
+              </Link>
               <span className="text-white/20 text-xs">|</span>
-              <a
-                href="https://golfgreen.jp/tokushoho.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/tokushoho"
                 className="text-white/40 text-xs hover:text-white/70 transition-colors"
               >
                 特定商取引法に基づく表記
-              </a> 
+              </Link>
             </div>
             <p className="text-white/40 text-xs">
               © 2025 Golf Green 高針インター店. All rights reserved.
