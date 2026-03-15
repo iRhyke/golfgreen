@@ -18,12 +18,12 @@ export default function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
 
-          <h2 className="text-[#0F3D25] text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">まずは体験から
+          <h2 className="text-[#111111] text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">まずは体験から
 はじめてみませんか？
 
 
           </h2>
-          <p className="text-[#0F3D25] mt-6 mx-auto text-base sm:text-lg max-w-xl">初めての方でも安心。スタッフが丁寧にサポートします。
+          <p className="text-gray-500 mt-6 mx-auto text-base sm:text-lg max-w-xl">初めての方でも安心。スタッフが丁寧にサポートします。
 最高の環境で、ゴルフの新しい楽しみを見つけてください。
 
 
@@ -37,11 +37,12 @@ export default function CTASection() {
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to={createPageUrl("Contact")} className="bg-[#FAFAFA] text-[#0F3D25] px-8 py-4 text-base font-medium rounded-full flex items-center gap-2 border border-white/30 hover:bg-white/10 transition-all">
-
-
-              お問い合わせ
-            </Link>
+               to={createPageUrl("Contact")}
+               className="inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all text-sm"
+             >
+               お問い合わせ
+               <ChevronRight className="w-4 h-4" />
+             </Link>
           </div>
         </motion.div>
       </div>

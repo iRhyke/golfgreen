@@ -153,7 +153,7 @@ export default function Faq() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              to={createPageUrl("ContactPage")}
+              to={createPageUrl("Contact")}
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all text-sm"
             >
               お問い合わせ
