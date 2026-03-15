@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
 import PageHeader from "../components/shared/PageHeader";
-import { Check, ChevronRight, Target, BarChart3, Globe, Video } from "lucide-react";
+import CTASection from "../components/home/CTASection";
+import { Check, Target, BarChart3, Globe, Video } from "lucide-react";
 
 const specs = [
   {
@@ -150,23 +149,7 @@ export default function Simulator() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 green-gradient">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#111111] mb-4">
-            最高級シミュレーターを体験しよう
-          </h2>
-          <p className="text-gray-500 mb-8">
-            VISION Plusの圧倒的なクオリティを、ぜひ実際に体感してください。
-          </p>
-          <Link
-            to={createPageUrl("Trial")}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all"
-          >
-            体験予約はこちら
-            <ChevronRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <CTASection page="simulator"/>
     </div>
   );
 }

@@ -3,14 +3,41 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
+const ctaContent = {
+  default: {
+    title: "まずは体験からはじめてみませんか？",
+    description: "初めての方でも安心。スタッフが丁寧にサポートします。\n最高の環境で、ゴルフの新しい楽しみを見つけてください。",
+  },
+  // 施設紹介ページ
+  facility: {
+    title: "体験してみませんか？",
+    description: "初めての方でも安心。お気軽にお問い合わせください。",
+  },
+  // シミュレーターページ
+  simulator: {
+    title: "最高級シミュレーターを体験しよう",
+    description: "VISION Plusの圧倒的なクオリティを、ぜひ実際に体感してください。",
+  },
+  // 料金ページ
+  pricing: {
+    title: "まずは体験から始めましょう",
+    description: "実際の施設を見て、シミュレーターを体験してからプランをお選びいただけます。",
+  },
+  // FAQページ
+  faq: {
+    title: "まずは体験から始めましょう",
+    description: "疑問が解決したら、ぜひ実際に体験してみてください。",
+  },
+};
+
 export default function CTASection({
-  title = "まずは体験からはじめてみませんか？",
-  description = "初めての方でも安心。スタッフが丁寧にサポートします。\n最高の環境で、ゴルフの新しい楽しみを見つけてください。",
+  page = "default",
   primaryText = "無料体験を予約する",
   primaryLink = "/trial",
   secondaryText = "お問い合わせ",
   secondaryLink = "/contact",
 }) {
+  const { title, description } = ctaContent[page] || ctaContent.default;
   return (
     <section className="py-24 lg:py-32 green-gradient relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">

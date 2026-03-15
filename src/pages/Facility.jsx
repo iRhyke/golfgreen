@@ -138,7 +138,7 @@ export default function Facility() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection page="facility"/>
     </div>
   );
 }

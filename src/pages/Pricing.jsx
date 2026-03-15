@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
 import PageHeader from "../components/shared/PageHeader";
-import { Star, Check, ChevronRight, Clock, Info } from "lucide-react";
+import CTASection from "@/components/home/CTASection";
+import { Star, Check, ChevronRight, Clock, Info, Link } from "lucide-react";
+
 
 const plans = [
   {
@@ -188,23 +188,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 green-gradient">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#111111] mb-4">
-            まずは体験から始めましょう
-          </h2>
-          <p className="text-gray-500 mb-8">
-            実際の施設を見て、シミュレーターを体験してからプランをお選びいただけます。
-          </p>
-          <Link
-            to={createPageUrl("Trial")}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all"
-          >
-            無料体験を予約する
-            <ChevronRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
+      <CTASection page="pricing" />
     </div>
   );
 }

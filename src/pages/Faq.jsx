@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
 import PageHeader from "../components/shared/PageHeader";
+import CTASection from "@/components/home/CTASection";
 import { ChevronDown, ChevronRight } from "lucide-react";
+
 
 const faqData = [
   {
@@ -143,32 +143,7 @@ export default function Faq() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#F9FAFB]">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-[#111111] mb-4">
-            解決しない場合は
-          </h2>
-          <p className="text-gray-500 mb-8">
-            上記で解決しなかった場合は、お気軽にお問い合わせください。
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to={createPageUrl("Contact")}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all text-sm"
-            >
-              お問い合わせ
-              <ChevronRight className="w-4 h-4" />
-            </Link>
-            <Link
-              to={createPageUrl("Trial")}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all text-sm"
-            >
-              体験予約
-              <ChevronRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection page="faq" />
     </div>
   );
 }
