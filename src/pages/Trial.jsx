@@ -1,11 +1,12 @@
 // @ts-nocheck
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PageHeader from "../components/shared/PageHeader";
-import { CalendarCheck, MapPin, Flag, UserPlus, Check, ChevronRight, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { CalendarCheck, MapPin, Flag, UserPlus, Check, ChevronRight, Loader2 } from "lucide-react";
+
 
 const steps = [
   {
@@ -45,7 +46,15 @@ export default function Trial() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const plan = params.get("plan");
+    if (plan) {
+      setSelectedPlan(plan);
+    }
+  }, []);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -53,7 +62,7 @@ export default function Trial() {
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, type: "trial" }),
+        body: JSON.stringify({ ...form, type: "trial", plan: selectedPlan }),
       });
       if (response.ok) {
         setIsSubmitted(true);
@@ -146,6 +155,12 @@ export default function Trial() {
                 <h3 className="text-xl font-bold text-[#111111] mb-2">体験予約フォーム</h3>
                 <p className="text-gray-500 text-sm mb-8">以下のフォームからお気軽にご予約ください</p>
 
+                {selectedPlan && (
+                  <div className="mb-6 px-4 py-3 bg-[#1B5E3B]/10 rounded-xl flex items-center gap-2">
+                    <span className="text-[#1B5E3B] text-sm font-semibold">選択中のプラン：</span>
+                    <span className="text-[#1B5E3B] text-sm">{selectedPlan}</span>
+                  </div>
+                )}
                 {isSubmitted ? (
                   <div className="text-center py-12">
                     <div className="w-16 h-16 rounded-full bg-[#1B5E3B]/10 flex items-center justify-center mx-auto mb-4">

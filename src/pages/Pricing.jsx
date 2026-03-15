@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/shared/PageHeader";
 import CTASection from "@/components/home/CTASection";
-import { Star, Check, ChevronRight, Clock, Info, Link } from "lucide-react";
+import { Star, Check, ChevronRight, Clock, Info } from "lucide-react";
 
 
 const plans = [
@@ -111,7 +112,7 @@ export default function Pricing() {
                   </ul>
                 </div>
                 <Link
-                  to="/trial"
+                  to={`/trial?plan=${encodeURIComponent(plan.name)}`}
                   className={`mt-8 block text-center py-3 rounded-full font-semibold text-sm transition-all ${
                     plan.popular
                       ? "bg-[#C8A96E] hover:bg-[#b8995e] text-white"
@@ -157,7 +158,7 @@ export default function Pricing() {
                   </ul>
                 </div>
                 <Link
-                  to="/trial"
+                  to={`/trial?plan=${encodeURIComponent(plan.name)}`}
                   className="mt-6 block text-center py-3 rounded-full font-semibold text-sm transition-all bg-[#1B5E3B] hover:bg-[#0F3D25] text-white"
                 >
                   このプランで始める
