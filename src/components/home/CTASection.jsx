@@ -38,10 +38,10 @@ export default function CTASection() {
             </Link>
             <Link
                to={createPageUrl("Contact")}
-               className="inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all text-sm"
+               className="group inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-sm"
              >
                お問い合わせ
-               <ChevronRight className="w-4 h-4" />
+               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
              </Link>
           </div>
         </motion.div>
