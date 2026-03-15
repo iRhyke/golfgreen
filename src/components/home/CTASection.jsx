@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
-export default function CTASection() {
+export default function CTASection({
+  title = "まずは体験からはじめてみませんか？",
+  description = "初めての方でも安心。スタッフが丁寧にサポートします。\n最高の環境で、ゴルフの新しい楽しみを見つけてください。",
+  primaryText = "無料体験を予約する",
+  primaryLink = "/trial",
+  secondaryText = "お問い合わせ",
+  secondaryLink = "/contact",
+}) {
   return (
     <section className="py-24 lg:py-32 green-gradient relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -16,36 +22,32 @@ export default function CTASection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}>
-
-          <h2 className="text-[#111111] text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">まずは体験から
-はじめてみませんか？
-
-
+          viewport={{ once: true }}
+        >
+          <h2 className="text-[#111111] text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+            {title}
           </h2>
-          <p className="text-gray-500 mt-6 mx-auto text-base sm:text-lg max-w-xl">初めての方でも安心。スタッフが丁寧にサポートします。
-最高の環境で、ゴルフの新しい楽しみを見つけてください。
-
-
+          <p className="text-gray-500 mt-6 mx-auto text-base sm:text-lg max-w-xl whitespace-pre-line">
+            {description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <Link
-              to={createPageUrl("Trial")}
-              className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base">
-
-              無料体験を予約する
+              to={primaryLink}
+              className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base"
+            >
+              {primaryText}
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-               to={createPageUrl("Contact")}
-               className="group inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-sm"
-             >
-               お問い合わせ
-               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-             </Link>
+              to={secondaryLink}
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-sm"
+            >
+              {secondaryText}
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
         </motion.div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
