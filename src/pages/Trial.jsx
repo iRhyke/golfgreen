@@ -49,10 +49,22 @@ export default function Trial() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // 送信処理（後でメール送信に接続）
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, type: "trial" }),
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("送信に失敗しました。もう一度お試しください。");
+      }
+    } catch (error) {
+      alert("送信に失敗しました。もう一度お試しください。");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

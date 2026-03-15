@@ -37,7 +37,7 @@ export default function CTASection() {
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to={createPageUrl("ContactPage")} className="bg-[#FAFAFA] text-[#0F3D25] px-8 py-4 text-base font-medium rounded-full flex items-center gap-2 border border-white/30 hover:bg-white/10 transition-all">
+              to={createPageUrl("Contact")} className="bg-[#FAFAFA] text-[#0F3D25] px-8 py-4 text-base font-medium rounded-full flex items-center gap-2 border border-white/30 hover:bg-white/10 transition-all">
 
 
               お問い合わせ
