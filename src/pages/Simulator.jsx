@@ -152,10 +152,10 @@ export default function Simulator() {
 
       <section className="py-20 lg:py-28 green-gradient">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-[#111111] mb-4">
             最高級シミュレーターを体験しよう
           </h2>
-          <p className="text-white/60 mb-8">
+          <p className="text-gray-500 mb-8">
             VISION Plusの圧倒的なクオリティを、ぜひ実際に体感してください。
           </p>
           <Link
