@@ -190,10 +190,10 @@ export default function Pricing() {
 
       <section className="py-20 lg:py-28 green-gradient">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-[#0F3D25] mb-4">
             まずは体験から始めましょう
           </h2>
-          <p className="text-white/60 mb-8">
+          <p className="text-[#0F3D25]/60 mb-8">
             実際の施設を見て、シミュレーターを体験してからプランをお選びいただけます。
           </p>
           <Link

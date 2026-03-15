@@ -141,8 +141,8 @@ export default function Facility() {
 
       <section className="py-20 lg:py-28 green-gradient">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">体験してみませんか？</h2>
-          <p className="text-white/60 mb-8">初めての方でも安心。お気軽にお問い合わせください。</p>
+          <h2 className="text-3xl font-bold text-[#0F3D25] mb-4">体験してみませんか？</h2>
+          <p className="text-[#0F3D25]/60 mb-8">初めての方でも安心。お気軽にお問い合わせください。</p>
           <Link
             to={createPageUrl("Trial")}
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all"
