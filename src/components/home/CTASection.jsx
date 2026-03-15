@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
 const ctaContent = {
+  // homeページ
   default: {
     title: "まずは体験からはじめてみませんか？",
     description: "初めての方でも安心。スタッフが丁寧にサポートします。\n最高の環境で、ゴルフの新しい楽しみを見つけてください。",
