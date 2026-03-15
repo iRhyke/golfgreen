@@ -28,9 +28,10 @@ export default async function handler(req, res) {
 
     // スプレッドシートに記録
     await fetch(SHEET_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, phone, message, type, inquiry_type }),
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: JSON.stringify({ name, email, phone, message, type, inquiry_type }),
+        redirect: "follow",
     });
 
     return res.status(200).json({ success: true });
