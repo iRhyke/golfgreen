@@ -7,7 +7,6 @@ const navItems = [
   { name: "ホーム", href: "/" },
   { name: "施設・設備", href: "/equipment" },
   { name: "料金プラン", href: "/pricing" },
-  { name: "体験・入会", href: "/trial" },
   { name: "アクセス", href: "/access" },
   { name: "よくある質問", href: "/faq" },
   { name: "お問い合わせ", href: "/contact" },
