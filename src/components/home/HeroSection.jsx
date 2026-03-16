@@ -21,16 +21,6 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {/* 店舗名 */}
-          <div className="mb-6">
-            <p className="text-white font-bold text-xl sm:text-2xl tracking-tight">
-              ゴルフサロングリーン
-            </p>
-            <p className="text-white/60 text-sm sm:text-base mt-1">
-              高針インター店
-            </p>
-          </div>
-
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-[#C8A96E] animate-pulse" />
             <span className="text-white/90 text-sm font-medium">24時間営業・年中無休</span>
