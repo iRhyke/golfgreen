@@ -79,7 +79,7 @@ export default function Layout({ children }) {
                 to="/trial"
                 className="ml-3 px-5 py-2.5 bg-[#C8A96E] hover:bg-[#b8995e] text-white text-[13px] font-semibold rounded-full transition-all hover:shadow-lg"
               >
-                体験予約
+                無料体験の予約はこちらから！
               </Link>
             </nav>
 
