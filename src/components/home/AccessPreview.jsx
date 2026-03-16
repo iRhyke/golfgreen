@@ -20,7 +20,7 @@ export default function AccessPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.1!2d137.01!3d35.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5oSb55-l55yM5ZCN5Y-k5bGL5biC5ZCN5p2x5Yy66auY6Yed5Y6f77yS5LiB55uu77yR77yX77yQ77yY!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9889.904629084584!2d136.98623856427417!3d35.14529111783757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600365728395c39b%3A0x146777364a0e3462!2sGOLF%20SALON%20GREEN!5e0!3m2!1sja!2sjp!4v1773631148514!5m2!1sja!2sjp"
               width="100%"
               height="100%"
               style={{ border: 0 }}
