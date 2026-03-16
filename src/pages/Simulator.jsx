@@ -82,8 +82,8 @@ export default function Simulator() {
             >
               <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?w=800&q=80"
-                  alt="VISION Plus"
+                  src="/images/visonplus_1920.jpg"
+                  alt="GOLFZON VISION Plus"
                   className="w-full h-full object-cover"
                 />
               </div>

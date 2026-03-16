@@ -83,8 +83,8 @@ export default function Facility() {
               className="rounded-2xl overflow-hidden aspect-[4/3]"
             >
               <img
-                src="https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?w=800&q=80"
-                alt="施設内観"
+                src="/images/exterior-w800.jpg"
+                alt="施設外観"
                 className="w-full h-full object-cover"
               />
             </motion.div>
