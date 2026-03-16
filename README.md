@@ -2,8 +2,15 @@
 ```bash
 cd ~/Documents/GitHub/golfgreen
 git add .
-git commit -m "説明"
+git commit -m "main: "
 git push
+```
+### プロトタイプにpush
+```bash
+cd ~/Documents/GitHub/golfgreen
+git add .
+git commit -m "prototype: "
+git push origin prototype-1
 ```
 
 ### ローカルで動かす。

@@ -17,7 +17,7 @@ export default function AccessPreview() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#111111]">アクセス</h2>
           <div className="w-12 h-0.5 bg-[#C8A96E] mx-auto mt-6" />
         </motion.div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -85,14 +85,6 @@ export default function AccessPreview() {
                 </div>
               </div>
             </div>
-
-            <Link
-              to="/trial"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all text-sm"
-            >
-              体験予約はこちら
-              <ChevronRight className="w-4 h-4" />
-            </Link>
           </motion.div>
         </div>
       </div>
