@@ -23,8 +23,8 @@ export default function SimulatorPreview() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?w=800&q=80"
-                alt="ゴルフシミュレーター"
+                src="/images/visonplus_1920.jpg"
+                alt="GOLFZON VISION Plus"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
