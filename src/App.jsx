@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Tokushoho from "./pages/Tokushoho";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Equipment from "./pages/Equipment";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/tokushoho" element={<Tokushoho />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/equipment" element={<Equipment />} />
         </Routes>
       </Layout>
     </Router>
