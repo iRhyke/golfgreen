@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { name: "ホーム", href: "/" },
-  { name: "施設・設備", href: "/equipment" },
+  { name: "施設紹介", href: "/facility" },
+  { name: "シミュレーター", href: "/simulator" },
   { name: "料金プラン", href: "/pricing" },
-  { name: "アクセス", href: "/access" },
   { name: "体験・入会", href: "/trial" },
   { name: "よくある質問", href: "/faq" },
   { name: "お問い合わせ", href: "/contact" },
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            
+
             <Link to="/" className="flex items-center gap-2">
               <div className="flex items-center">
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
