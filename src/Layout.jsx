@@ -40,19 +40,26 @@ export default function Layout({ children }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-
+            
             <Link to="/" className="flex items-center gap-2">
               <div className="flex items-center">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                   scrolled || !isHome ? "bg-[#1B5E3B]" : "bg-white/20 backdrop-blur-sm"
                 }`}>
                   <span className="text-white font-bold text-sm">G</span>
                 </div>
-                <span className={`ml-2 text-lg font-semibold tracking-tight ${
-                  scrolled || !isHome ? "text-[#111111]" : "text-white"
-                }`}>
-                  ゴルフサロングリーン 高針インター店
-                </span>
+                <div className="ml-2 flex flex-col">
+                  <span className={`text-base font-bold tracking-tight leading-tight ${
+                    scrolled || !isHome ? "text-[#111111]" : "text-white"
+                  }`}>
+                    ゴルフサロングリーン
+                  </span>
+                  <span className={`text-[11px] font-medium tracking-tight leading-tight ${
+                    scrolled || !isHome ? "text-gray-500" : "text-white/70"
+                  }`}>
+                    高針インター店
+                  </span>
+                </div>
               </div>
             </Link>
 
@@ -76,9 +83,10 @@ export default function Layout({ children }) {
               ))}
               <Link
                 to="/trial"
-                className="ml-3 px-5 py-2.5 bg-[#C8A96E] hover:bg-[#b8995e] text-white text-[13px] font-semibold rounded-full transition-all hover:shadow-lg"
+                className="ml-3 px-6 py-3 bg-[#C8A96E] hover:bg-[#b8995e] text-white text-sm font-bold rounded-full transition-all hover:shadow-lg flex items-center gap-2"
               >
-                無料体験の予約はこちらから！
+                <Phone className="w-4 h-4" />
+                無料体験を予約する
               </Link>
             </nav>
 

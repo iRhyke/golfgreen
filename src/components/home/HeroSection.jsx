@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
 import { ChevronRight, Clock, Zap } from "lucide-react";
 
@@ -22,6 +21,16 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          {/* 店舗名 */}
+          <div className="mb-6">
+            <p className="text-white font-bold text-xl sm:text-2xl tracking-tight">
+              ゴルフサロングリーン
+            </p>
+            <p className="text-white/60 text-sm sm:text-base mt-1">
+              高針インター店
+            </p>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-[#C8A96E] animate-pulse" />
             <span className="text-white/90 text-sm font-medium">24時間営業・年中無休</span>
@@ -41,17 +50,18 @@ export default function HeroSection() {
             24時間いつでも、最高の環境で練習できます。
           </p>
 
+          {/* 予約ボタン（大きく目立つように） */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <Link
-              to={createPageUrl("Trial")}
-              className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base"
+              to="/trial"
+              className="group flex items-center gap-3 px-10 py-5 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-bold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-lg"
             >
               無料体験を予約する
-              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to={createPageUrl("Pricing")}
-              className="flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-all text-base"
+              to="/pricing"
+              className="flex items-center gap-2 px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-all text-base"
             >
               料金を見る
             </Link>
