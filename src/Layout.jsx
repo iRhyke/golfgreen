@@ -138,7 +138,7 @@ export default function Layout({ children }) {
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
                   <span className="text-white font-bold text-sm">G</span>
                 </div>
-                <span className="text-lg font-semibold">Golf Green</span>
+                <span className="text-lg font-semibold">ゴルフサロングリーン</span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed">
                 高針インター店<br />24時間営業のインドアゴルフ施設
@@ -205,7 +205,7 @@ export default function Layout({ children }) {
               </Link>
             </div>
             <p className="text-white/40 text-xs">
-              © 2025 Golf Green 高針インター店. All rights reserved.
+              © 2026 ゴルフサロングリーン 高針インター店. All rights reserved.
             </p>
           </div>
         </div>

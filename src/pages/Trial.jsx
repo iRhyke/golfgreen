@@ -153,49 +153,22 @@ export default function Trial() {
             >
               <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10">
                 <h3 className="text-xl font-bold text-[#111111] mb-2">体験予約フォーム</h3>
-                <p className="text-gray-500 text-sm mb-8">以下のフォームからお気軽にご予約ください</p>
-
+                <p className="text-gray-500 text-sm mb-8">以下のカレンダーからご希望の日時をお選びください</p>
                 {selectedPlan && (
                   <div className="mb-6 px-4 py-3 bg-[#1B5E3B]/10 rounded-xl flex items-center gap-2">
                     <span className="text-[#1B5E3B] text-sm font-semibold">選択中のプラン：</span>
                     <span className="text-[#1B5E3B] text-sm">{selectedPlan}</span>
                   </div>
                 )}
-                {isSubmitted ? (
-                  <div className="text-center py-12">
-                    <div className="w-16 h-16 rounded-full bg-[#1B5E3B]/10 flex items-center justify-center mx-auto mb-4">
-                      <Check className="w-8 h-8 text-[#1B5E3B]" />
-                    </div>
-                    <h3 className="text-xl font-bold text-[#111111] mb-2">ご予約ありがとうございます</h3>
-                    <p className="text-gray-500 text-sm">担当者より折り返しご連絡いたします。</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5">
-                    <div>
-                      <label className="text-sm font-medium text-gray-700 mb-1.5 block">お名前 <span className="text-red-500">*</span></label>
-                      <Input required placeholder="山田 太郎" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="h-12" />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-gray-700 mb-1.5 block">メールアドレス <span className="text-red-500">*</span></label>
-                      <Input required type="email" placeholder="email@example.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="h-12" />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-gray-700 mb-1.5 block">電話番号</label>
-                      <Input type="tel" placeholder="090-1234-5678" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="h-12" />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-gray-700 mb-1.5 block">ご希望の日時・メッセージ</label>
-                      <Textarea placeholder="ご希望の体験日時やご質問があればご記入ください" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={4} />
-                    </div>
-                    <Button type="submit" disabled={isSubmitting} className="w-full h-12 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full text-base">
-                      {isSubmitting ? (
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                      ) : (
-                        <>体験を予約する <ChevronRight className="w-4 h-4 ml-2" /></>
-                      )}
-                    </Button>
-                  </form>
-                )}
+                <iframe
+                  src="https://golfgreen.golren.com/trial?store_id=62"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  style={{ border: "none", maxWidth: "100%" }}
+                  title="体験予約フォーム"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </div>
