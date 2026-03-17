@@ -3,11 +3,18 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// ヘッダー用（お問い合わせなし）
 const navItems = [
   { name: "ホーム", href: "/" },
   { name: "施設紹介", href: "/facility" },
   { name: "シミュレーター", href: "/simulator" },
   { name: "料金プラン", href: "/pricing" },
+  { name: "体験・入会", href: "/trial" },
+  { name: "よくある質問", href: "/faq" },
+];
+
+// フッターサポート用（お問い合わせあり）
+const footerSupportItems = [
   { name: "体験・入会", href: "/trial" },
   { name: "よくある質問", href: "/faq" },
   { name: "お問い合わせ", href: "/contact" },
@@ -168,7 +175,7 @@ export default function Layout({ children }) {
             <div>
               <h4 className="text-sm font-semibold mb-4 text-[#C8A96E]">サポート</h4>
               <ul className="space-y-2.5">
-                {navItems.slice(4).map((item) => (
+                {footerSupportItems.map((item) => (
                   <li key={item.href}>
                     <Link to={item.href} className="text-white/60 text-sm hover:text-white transition-colors">
                       {item.name}
