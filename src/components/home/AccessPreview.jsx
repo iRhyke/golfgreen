@@ -33,7 +33,7 @@ export default function AccessPreview() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Golf Green 高針インター店"
+              title="ゴルフサロングリーン 高針インター店"
             />
           </motion.div>
 

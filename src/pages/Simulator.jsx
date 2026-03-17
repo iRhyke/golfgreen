@@ -70,7 +70,7 @@ export default function Simulator() {
                 リアルな体験を提供します。
               </p>
               <p className="mt-4 text-gray-500 leading-relaxed">
-                Golf Green 高針インター店では、このVISION Plusを2台完備。
+                ゴルフサロングリーン 高針インター店では、このVISION Plusを2台完備。
                 最高の環境で、練習からラウンドまで幅広くお楽しみいただけます。
               </p>
             </motion.div>

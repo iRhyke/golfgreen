@@ -100,7 +100,7 @@ export default function Equipment() {
                 <span className="text-[#1B5E3B]">最高の練習を。</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                Golf Green 高針インター店は、GOLFZON社の最高級シミュレーター
+                ゴルフサロングリーン 高針インター店は、GOLFZON社の最高級シミュレーター
                 「VISION Plus」を2台完備したインドアゴルフ施設です。
                 24時間営業で、天候や時間を気にせず、いつでも本格的な
                 ゴルフ練習が可能です。
@@ -171,7 +171,7 @@ export default function Equipment() {
                 リアルな体験を提供します。
               </p>
               <p className="mt-4 text-gray-500 leading-relaxed">
-                Golf Green 高針インター店では、このVISION Plusを2台完備。
+                ゴルフサロングリーン 高針インター店では、このVISION Plusを2台完備。
                 最高の環境で、練習からラウンドまで幅広くお楽しみいただけます。
               </p>
             </motion.div>

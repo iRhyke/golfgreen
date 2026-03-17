@@ -11,7 +11,7 @@ export default function Access() {
       <PageHeader
         subtitle="Access"
         title="アクセス"
-        description="Golf Green 高針インター店へのアクセス方法"
+        description="ゴルフサロングリーン 高針インター店へのアクセス方法"
       />
 
       <section className="py-20 lg:py-28 bg-white">
@@ -31,7 +31,7 @@ export default function Access() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Golf Green 高針インター店"
+                title="ゴルフサロングリーン 高針インター店"
               />
             </motion.div>
 
@@ -43,8 +43,8 @@ export default function Access() {
             >
               <div>
                 <h2 className="text-2xl font-bold text-[#111111] mb-6">店舗情報</h2>
-                <h3 className="text-lg font-semibold text-[#1B5E3B]">Golf Green 高針インター店</h3>
-              </div>
+                  <h3 className="text-lg font-semibold text-[#1B5E3B]">ゴルフサロングリーン 高針インター店</h3>
+                </div>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-5 rounded-xl bg-[#F9FAFB]">

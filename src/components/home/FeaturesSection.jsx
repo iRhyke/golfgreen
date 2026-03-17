@@ -37,7 +37,7 @@ export default function FeaturesSection() {
         >
           <span className="text-[#C8A96E] text-sm font-semibold tracking-widest uppercase">Features</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#111111]">
-            Golf Greenの特徴
+            ゴルフサロングリーンの特徴
           </h2>
           <div className="w-12 h-0.5 bg-[#C8A96E] mx-auto mt-6" />
         </motion.div>
