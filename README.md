@@ -1,13 +1,13 @@
 ### Git push（変更をVercelに反映）
 ```bash
-cd ~/Documents/GitHub/golfgreen
+cd ~/Documents/GitHub/golfsarongreen
 git add .
 git commit -m "main: "
 git push
 ```
 ### プロトタイプにpush
 ```bash
-cd ~/Documents/GitHub/golfgreen
+cd ~/Documents/GitHub/golfsarongreen
 git add .
 git commit -m "prototype: "
 git push origin prototype-1
@@ -15,7 +15,7 @@ git push origin prototype-1
 
 ### ローカルで動かす。
 ```bash
-cd ~/Documents/GitHub/golfgreen
+cd ~/Documents/GitHub/golfsarongreen
 npm run dev
 ```
 
