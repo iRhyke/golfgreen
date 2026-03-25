@@ -64,14 +64,12 @@ export default function Simulator() {
                 <span className="text-[#C8A96E]">Plus</span>
               </h2>
               <p className="mt-6 text-gray-500 leading-relaxed">
-                GOLFZON VISION Plusは、シミュレーターゴルフの世界的リーダーである
-                GOLFZON社が開発した最高級モデルです。圧倒的な映像クオリティと
-                高精度なセンサー技術により、まるで本物のコースにいるかのような
-                リアルな体験を提供します。
+                GOLFZON VISION Plusは、シミュレーターゴルフの世界的リーダーであるGOLFZON社が開発した最高級モデルです。
+                圧倒的な映像クオリティと高精度なセンサー技術により、まるで国内外の有名コースを実際にラウンドしているかのような臨場感を提供します。
               </p>
               <p className="mt-4 text-gray-500 leading-relaxed">
-                ゴルフサロングリーン 高針インター店では、このVISION Plusを2台完備。
-                最高の環境で、練習からラウンドまで幅広くお楽しみいただけます。
+                ゴルフサロングリーン 高針インター店では、このVISION Plusを全2室に1台ずつ完備。
+                完全個室のプライベートな空間で、誰にも邪魔されることなくスイング分析やコース攻略に集中いただけます。
               </p>
             </motion.div>
             <motion.div
@@ -88,7 +86,7 @@ export default function Simulator() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 max-w-[200px]">
-                <p className="text-4xl font-bold text-[#1B5E3B]">2<span className="text-lg ml-1">台</span></p>
+                <p className="text-4xl font-bold text-[#1B5E3B]">2<span className="text-lg ml-1">室</span></p>
                 <p className="text-gray-500 text-sm mt-1">完備</p>
               </div>
             </motion.div>

@@ -27,17 +27,15 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
-            最高峰の
+            24時間、
             <br />
-            <span className="text-[#C8A96E]">シミュレーター</span>で
-            <br />
-            ゴルフが変わる
+            さらなる<span className="text-[#C8A96E]">高み</span>へ。
           </h1>
 
           <p className="mt-6 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            GOLFZON最高級モデル「VISION Plus」完備。
+            完全個室のプライベート空間で、GOLFZON最高級モデル「VISION Plus」を。
             <br className="hidden sm:block" />
-            24時間いつでも、最高の環境で練習できます。
+            初心者から上級者まで、天候・季節を問わず最高の環境を約束します。
           </p>
 
           {/* 予約ボタン（大きく目立つように） */}

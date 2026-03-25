@@ -7,23 +7,23 @@ import { Monitor, Users, Clock, Shield } from "lucide-react";
 const facilities = [
   {
     icon: Monitor,
-    title: "GOLFZON VISION Plus × 2台",
-    description: "GOLFZON社の最高級モデルを2台完備。業界最高レベルの精度で、リアルなゴルフ体験を提供します。",
+    title: "VISION Plus 各室1台（全2室）",
+    description: "GOLFZON最高級モデルを全室に完備。圧倒的な再現度で、国内外の名門コースを体験いただけます。",
   },
   {
     icon: Users,
-    title: "左右打席対応",
-    description: "右打ち・左打ちどちらにも対応した打席をご用意。すべてのゴルファーに快適な練習環境を。",
+    title: "左右両打ち対応",
+    description: "右打ち・左打ちどちらのゴルファーもストレスなく練習いただけるよう、両打ち対応の打席を全室にご用意しています。",
   },
   {
     icon: Clock,
-    title: "24時間営業・年中無休",
-    description: "仕事前の早朝練習も、仕事後の深夜練習も。お客様のライフスタイルに合わせてご利用いただけます。",
+    title: "24時間・年中無休",
+    description: "早朝のラウンド前や、お仕事帰りのリフレッシュに。お客様の生活リズムに合わせて、365日いつでもご利用可能です。",
   },
   {
     icon: Shield,
-    title: "完全プライベート空間",
-    description: "周囲を気にせず、自分のペースでじっくり練習に集中できる環境です。",
+    title: "完全プライベート個室",
+    description: "人目を気にせず、自分だけの練習に没頭できる完全個室。初心者の方もリラックスしてプレーをお楽しみください。",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function Facility() {
       <PageHeader
         subtitle="Facility"
         title="施設紹介"
-        description="最高級の設備と快適な空間で、ゴルフの上達をサポートします"
+        description="最先端のシミュレーターと、プライベートを重視した上質な空間。"
       />
 
       <section className="py-20 lg:py-28 bg-white">
@@ -60,20 +60,16 @@ export default function Facility() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-[#111111] mb-6">
-                最高の環境で、
+                妥協のない
                 <br />
-                <span className="text-[#1B5E3B]">最高の練習を。</span>
+                <span className="text-[#1B5E3B]">練習環境を、その手に。</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                ゴルフサロングリーン 高針インター店は、GOLFZON社の最高級シミュレーター
-                「VISION Plus」を2台完備したインドアゴルフ施設です。
-                24時間営業で、天候や時間を気にせず、いつでも本格的な
-                ゴルフ練習が可能です。
+                ゴルフサロングリーン 高針インター店は、全室にGOLFZON社の最高級シミュレーター「VISION Plus」を採用。
+                24時間いつでも、最高のテクノロジーを活用した集中練習が可能です。
               </p>
               <p className="text-gray-500 leading-relaxed">
-                初心者の方からスコアアップを目指す上級者まで、
-                すべてのゴルファーに最適な練習環境を提供します。
-                1枠80分でじっくりと練習に取り組めます。
+                「1Place cafe」の2階に位置する隠れ家のような空間で、初心者から上級者まで、すべてのゴルファーの情熱に応える環境を整えてお待ちしております。
               </p>
             </motion.div>
             <motion.div
