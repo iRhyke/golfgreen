@@ -4,7 +4,7 @@ import PageHeader from "../components/shared/PageHeader";
 const items = [
   { label: "販売業者", value: "	株式会社GROUND FLAG（ゴルフサロングリーン 高針インター店）" },
   { label: "代表責任者", value: "渡辺 一人" },
-  { label: "所在地", value: "〒481-0014 愛知県北名古屋市井瀬木五町100番地" },
+  { label: "所在地", value: "〒465-0061 愛知県名古屋市名東区高針原2-1708 1Place cafe 2階" },
   { label: "電話番号", value: "	0568-24-1061" },
   { label: "電話受付時間", value: "平日 9:00 - 19:00" },
   { label: "公開メールアドレス", value: "watanabehitori@icloud.com" },

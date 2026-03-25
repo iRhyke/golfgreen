@@ -16,7 +16,7 @@ export default function Terms() {
           <div>
             <h2 className="text-base font-bold text-[#111111] mb-3">第1条（適用範囲）</h2>
             <p className="text-sm text-gray-500 leading-relaxed">
-              本規約は、ゴルフサロングリーン 高針インター店（以下「本クラブ」といいます。）として渡辺 一人が運営するインドアゴルフ練習場および施設を構成する各種サービスに関し適用されるものとします。
+              本規約は、ゴルフサロングリーン 高針インター店（以下「本クラブ」といいます。）として株式会社GROUND FLAGが運営するインドアゴルフ練習場および施設を構成する各種サービスに関し適用されるものとします。
             </p>
           </div>
 

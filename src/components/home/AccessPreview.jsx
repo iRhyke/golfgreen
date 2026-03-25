@@ -57,7 +57,7 @@ export default function AccessPreview() {
                   <h4 className="font-semibold text-[#111111] text-sm mb-1">所在地</h4>
                   <p className="text-gray-500 text-sm">
                     〒465-0061<br />
-                    愛知県名古屋市名東区高針原２丁目１７０８
+                    愛知県名古屋市名東区高針原2-1708 1Place cafe 2階
                   </p>
                 </div>
               </div>
@@ -77,10 +77,12 @@ export default function AccessPreview() {
                   <Car className="w-5 h-5 text-[#1B5E3B]" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#111111] text-sm mb-1">お車でのアクセス</h4>
+                  <h4 className="font-semibold text-[#111111] text-sm mb-1">お車でのアクセス・駐車場</h4>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     高針インターすぐ。<br />
-                    駐車場を完備しておりますので、お車でのご来店が便利です。
+                    駐車場を完備しております。<br />
+                    ・表面駐車場：10台<br />
+                    ・裏面駐車場：40台（こちらが便利です）
                   </p>
                 </div>
               </div>

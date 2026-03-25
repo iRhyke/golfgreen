@@ -39,31 +39,27 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled || !isHome
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || !isHome
             ? "bg-white/95 backdrop-blur-md shadow-sm"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
 
             <Link to="/" className="flex items-center gap-2">
               <div className="flex items-center">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                  scrolled || !isHome ? "bg-[#1B5E3B]" : "bg-white/20 backdrop-blur-sm"
-                }`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${scrolled || !isHome ? "bg-[#1B5E3B]" : "bg-white/20 backdrop-blur-sm"
+                  }`}>
                   <span className="text-white font-bold text-sm">G</span>
                 </div>
                 <div className="ml-2 flex flex-col">
-                  <span className={`text-base font-bold tracking-tight leading-tight ${
-                    scrolled || !isHome ? "text-[#111111]" : "text-white"
-                  }`}>
+                  <span className={`text-base font-bold tracking-tight leading-tight ${scrolled || !isHome ? "text-[#111111]" : "text-white"
+                    }`}>
                     ゴルフサロングリーン
                   </span>
-                  <span className={`text-[11px] font-medium tracking-tight leading-tight ${
-                    scrolled || !isHome ? "text-gray-500" : "text-white/70"
-                  }`}>
+                  <span className={`text-[11px] font-medium tracking-tight leading-tight ${scrolled || !isHome ? "text-gray-500" : "text-white/70"
+                    }`}>
                     高針インター店
                   </span>
                 </div>
@@ -75,15 +71,14 @@ export default function Layout({ children }) {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className={`px-3 py-2 text-[13px] font-medium rounded-md transition-colors ${
-                    location.pathname === item.href
+                  className={`px-3 py-2 text-[13px] font-medium rounded-md transition-colors ${location.pathname === item.href
                       ? scrolled || !isHome
                         ? "text-[#1B5E3B] bg-[#1B5E3B]/5"
                         : "text-white bg-white/15"
                       : scrolled || !isHome
-                      ? "text-gray-600 hover:text-[#1B5E3B] hover:bg-gray-50"
-                      : "text-white/80 hover:text-white hover:bg-white/10"
-                  }`}
+                        ? "text-gray-600 hover:text-[#1B5E3B] hover:bg-gray-50"
+                        : "text-white/80 hover:text-white hover:bg-white/10"
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -99,9 +94,8 @@ export default function Layout({ children }) {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`lg:hidden p-2 rounded-md ${
-                scrolled || !isHome ? "text-gray-700" : "text-white"
-              }`}
+              className={`lg:hidden p-2 rounded-md ${scrolled || !isHome ? "text-gray-700" : "text-white"
+                }`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -121,11 +115,10 @@ export default function Layout({ children }) {
                   <Link
                     key={item.href}
                     to={item.href}
-                    className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                      location.pathname === item.href
+                    className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${location.pathname === item.href
                         ? "text-[#1B5E3B] bg-[#1B5E3B]/5"
                         : "text-gray-600 hover:bg-gray-50"
-                    }`}
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -189,7 +182,7 @@ export default function Layout({ children }) {
               <h4 className="text-sm font-semibold mb-4 text-[#C8A96E]">店舗情報</h4>
               <div className="text-white/60 text-sm space-y-2.5">
                 <p>〒465-0061</p>
-                <p>愛知県名古屋市名東区<br />高針原２丁目１７０８</p>
+                <p>愛知県名古屋市名東区<br />高針原2-1708 1Place cafe 2階</p>
                 <p>24時間営業 / 年中無休</p>
               </div>
             </div>

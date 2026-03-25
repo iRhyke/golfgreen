@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "./Layout";
 import Home from "./pages/Home";
@@ -12,7 +12,6 @@ import Contact from "./pages/Contact";
 import Tokushoho from "./pages/Tokushoho";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-import Equipment from "./pages/Equipment";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,7 +38,7 @@ export default function App() {
           <Route path="/tokushoho" element={<Tokushoho />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/equipment" element={<Navigate to="/facility" replace />} />
         </Routes>
       </Layout>
     </Router>

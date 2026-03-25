@@ -35,8 +35,6 @@ export default function CTASection({
   page = "default",
   primaryText = "無料体験を予約する",
   primaryLink = "/trial",
-  secondaryText = "お問い合わせ",
-  secondaryLink = "/contact",
 }) {
   const { title, description } = ctaContent[page] || ctaContent.default;
   return (
@@ -58,19 +56,12 @@ export default function CTASection({
           <p className="text-gray-500 mt-6 mx-auto text-base sm:text-lg max-w-xl whitespace-pre-line">
             {description}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <div className="flex items-center justify-center mt-10">
             <Link
               to={primaryLink}
               className="group flex items-center gap-2 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-base"
             >
               {primaryText}
-              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              to={secondaryLink}
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-[#1B5E3B] hover:bg-[#0F3D25] text-white font-semibold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-sm"
-            >
-              {secondaryText}
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

@@ -11,17 +11,17 @@ const features = [
   {
     icon: Monitor,
     title: "最高級シミュレーター",
-    description: "GOLFZON社「VISION Plus」を2台完備。プロも認める精度の弾道解析。",
+    description: "各個室にVISION Plusを1台設置（全2室）。プロも認める精度の弾道解析。",
   },
   {
     icon: CloudOff,
-    title: "天候に左右されない",
-    description: "雨の日も猛暑の日も、快適な室内環境で集中して練習が可能です。",
+    title: "天候・季節に左右されない",
+    description: "雨の日も真冬も、快適な室内で集中して練習できます。",
   },
   {
     icon: Sparkles,
-    title: "快適な練習環境",
-    description: "左右打席対応の完全プライベート空間。初心者から上級者まで安心。",
+    title: "完全プライベート空間",
+    description: "左右打席対応の個室設計。初心者から上級者まで、人目を気にせず練習可能。",
   },
 ];
 

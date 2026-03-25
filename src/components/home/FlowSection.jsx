@@ -7,19 +7,19 @@ const steps = [
     icon: CalendarCheck,
     step: "01",
     title: "ご予約",
-    description: "お問い合わせフォームまたはお電話でご予約ください。",
+    description: "下記フォームから日時を選んでご予約ください。",
   },
   {
     icon: MapPin,
     step: "02",
-    title: "ご来店",
-    description: "施設の説明とご利用方法をスタッフがご案内いたします。",
+    title: "ご来店・説明",
+    description: "ご来店後、スタッフが施設とシミュレーターの使い方をご説明します。説明後はお一人でゆっくりお楽しみいただけます。",
   },
   {
     icon: Flag,
     step: "03",
     title: "体験プレー",
-    description: "80分間、最高級シミュレーターでゴルフをお楽しみください。",
+    description: "80分間、VISION Plusで自由にプレー。コース・練習モードどちらでもOK。",
   },
 ];
 
