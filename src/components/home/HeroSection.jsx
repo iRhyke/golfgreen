@@ -32,8 +32,8 @@ export default function HeroSection() {
             さらなる<span className="text-[#C8A96E]">高み</span>へ。
           </h1>
 
-          <p className="mt-6 text-white/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-normal">
-            名古屋・高針。完全個室の贅沢な空間で、
+          <p className="mt-6 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
+            クーラーの効いた快適な空間で、GOLFZON最高級モデル「VISION Plus」を。
             <br className="hidden sm:block" />
             最高級シミュレーター「VISION Plus」を心ゆくまで。
           </p>
