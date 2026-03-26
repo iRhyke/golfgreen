@@ -13,13 +13,13 @@ const steps = [
     icon: CalendarCheck,
     step: "01",
     title: "ご予約",
-    description: "下記フォームまたはお電話にて、ご希望の日時をお知らせください。",
+    description: "専用フォームから日時を選んでご予約ください。即時予約確定となります。",
   },
   {
     icon: MapPin,
     step: "02",
-    title: "ご来店",
-    description: "施設の説明とご利用方法をスタッフが丁寧にご案内いたします。",
+    title: "ご来店・説明",
+    description: "スタッフが施設とシミュレーターの使い方をご説明します。説明後は自由にお楽しみいただけます。",
   },
   {
     icon: Flag,
@@ -30,8 +30,8 @@ const steps = [
   {
     icon: UserPlus,
     step: "04",
-    title: "入会手続き",
-    description: "ご納得いただけましたら、お好みのプランで入会手続きを行います。",
+    title: "入会案内",
+    description: "ご希望の方には、ライフスタイルに最適なプランをご提案いたします。",
   },
 ];
 
@@ -140,8 +140,8 @@ export default function Trial() {
               <div className="mt-10 p-6 rounded-2xl bg-white border border-gray-100">
                 <h3 className="font-semibold text-[#111111] mb-2">体験時の持ち物</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  動きやすい服装でお越しください。ゴルフクラブ・シューズは無料でお貸し出ししております。
-                  グローブをお持ちの方はご持参ください。
+                  動きやすい服装でお越しください。ゴルフクラブ・グローブは無料でお貸し出ししております。
+                  マイクラブ・マイシューズの持ち込みも大歓迎です。ただし、シューズのご用意はございませんのでご注意ください。
                 </p>
               </div>
             </motion.div>
