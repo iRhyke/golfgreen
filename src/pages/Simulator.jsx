@@ -12,8 +12,8 @@ const specs = [
   },
   {
     icon: Globe,
-    title: "世界の名門コースを体験",
-    description: "セントアンドリュースやペブルビーチなど、世界中の200以上の有名コースを収録。憧れの舞台でのラウンドをリアルに再現します。",
+    title: "世界の名門コース",
+    description: "世界中の200以上の有名コースを収録。セントアンドリュースやペブルビーチなど、憧れのコースでラウンドが楽しめます。",
   },
   {
     icon: Video,
@@ -63,13 +63,13 @@ export default function Simulator() {
                 <br />
                 <span className="text-[#C8A96E]">Plus</span>
               </h2>
-              <p className="mt-6 text-gray-600 leading-relaxed">
-                GOLFZON VISION Plusは、世界4万箇所以上の導入実績を誇るGOLFZON社のフラッグシップモデルです。
-                圧倒的な映像クオリティと高速センサーによる正確な弾道解析により、まるで現地でラウンドしているかのような臨場感を提供します。
+              <p className="mt-6 text-gray-500 leading-relaxed">
+                GOLFZON VISION Plusは、シミュレーターゴルフの世界的リーダーであるGOLFZON社が開発した最高級モデルです。
+                圧倒的な映像クオリティと高精度なセンサー技術により、まるで国内外の有名コースを実際にラウンドしているかのような臨場感を提供します。
               </p>
-              <p className="mt-4 text-gray-600 leading-relaxed">
-                当施設では、この最高峰モデルを全室に完備。
-                完全個室のプライベートな空間で、誰にも邪魔されることなく、自分の課題に深く向き合うことができます。
+              <p className="mt-4 text-gray-500 leading-relaxed">
+                ゴルフサロングリーン 高針インター店では、このVISION Plusを全2室に1台ずつ完備。
+                完全個室のプライベートな空間で、誰にも邪魔されることなくスイング分析やコース攻略に集中いただけます。
               </p>
             </motion.div>
             <motion.div
@@ -147,7 +147,7 @@ export default function Simulator() {
         </div>
       </section>
 
-      <CTASection page="simulator"/>
+      <CTASection page="simulator" />
     </div>
   );
 }

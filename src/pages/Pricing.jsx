@@ -73,11 +73,10 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08 }}
-                className={`relative p-8 rounded-2xl border transition-all ${
-                  plan.popular
+                className={`relative p-8 rounded-2xl border transition-all ${plan.popular
                     ? "bg-[#0F3D25] text-white border-transparent shadow-2xl shadow-[#0F3D25]/20"
                     : "bg-white border-gray-200 hover:border-gray-300 hover:shadow-lg"
-                }`}
+                  }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -113,11 +112,10 @@ export default function Pricing() {
                 </div>
                 <Link
                   to={`/trial?plan=${encodeURIComponent(plan.name)}`}
-                  className={`mt-8 block text-center py-3 rounded-full font-semibold text-sm transition-all ${
-                    plan.popular
+                  className={`mt-8 block text-center py-3 rounded-full font-semibold text-sm transition-all ${plan.popular
                       ? "bg-[#C8A96E] hover:bg-[#b8995e] text-white"
                       : "bg-[#1B5E3B] hover:bg-[#0F3D25] text-white"
-                  }`}
+                    }`}
                 >
                   このプランで始める
                 </Link>
@@ -177,11 +175,11 @@ export default function Pricing() {
               <Info className="w-5 h-5 text-[#C8A96E] flex-shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-[#111111] mb-2">ご利用について</h3>
-                <ul className="text-gray-600 text-sm space-y-2 leading-relaxed">
-                  <li>・1枠あたりの利用時間は「80分」です。準備からお着替えまでゆったりお使いいただけます。</li>
-                  <li>・すべてのプランで個室の「VISION Plus」をご利用いただけます。</li>
-                  <li>・プラン変更は前月15日までのお申し出で、翌月から適用可能です。</li>
-                  <li>・入会時の初期費用等については、無料体験時にスタッフより詳しくご案内いたします。</li>
+                <ul className="text-gray-500 text-sm space-y-1.5 leading-relaxed">
+                  <li>・1枠あたりの利用時間は80分です</li>
+                  <li>・すべてのプランでGOLFZON VISION Plusをご利用いただけます</li>
+                  <li>・プランの変更は月単位で可能です</li>
+                  <li>・入会金・事務手数料については体験時にご説明いたします</li>
                 </ul>
               </div>
             </div>

@@ -1,6 +1,9 @@
 ### Git push（変更をVercelに反映）
 ```bash
-
+cd ~/Documents/GitHub/golfsarongreen
+git add .
+git commit -m "main: "
+git push
 ```
 ### プロトタイプにpush
 ```bash

@@ -27,9 +27,11 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
-            24時間、
+            最高峰の
             <br />
-            さらなる<span className="text-[#C8A96E]">高み</span>へ。
+            <span className="text-[#C8A96E]">シミュレーター</span>で
+            <br />
+            ゴルフが変わる
           </h1>
 
           <p className="mt-6 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
