@@ -74,7 +74,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-[#111111] text-sm mb-1">所在地</h4>
                     <p className="text-gray-500 text-xs leading-relaxed">
-                      愛知県名古屋市名東区<br />高針原２丁目１７０８
+                      愛知県名古屋市名東区<br />高針原２丁目１７０８ 1Place cafe2階
                     </p>
                   </div>
                 </div>

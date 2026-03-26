@@ -33,7 +33,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            完全個室のプライベート空間で、GOLFZON最高級モデル「VISION Plus」を。
+            クーラーの効いた快適な空間で、GOLFZON最高級モデル「VISION Plus」を。
             <br className="hidden sm:block" />
             初心者から上級者まで、天候・季節を問わず最高の環境を約束します。
           </p>

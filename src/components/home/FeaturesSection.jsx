@@ -11,7 +11,7 @@ const features = [
   {
     icon: Monitor,
     title: "最高級シミュレーター",
-    description: "各個室にVISION Plusを1台設置（全2室）。プロも認める精度の弾道解析。",
+    description: "GOLFZON社「VISION Plus」を2台、各個室に完備。プロも認める精度の弾道解析。",
   },
   {
     icon: CloudOff,

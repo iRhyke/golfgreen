@@ -112,7 +112,7 @@ export default function Privacy() {
             <h2 className="text-base font-bold text-[#111111] mb-3">第10条（お問い合わせ窓口）</h2>
             <p className="text-sm text-gray-500 leading-relaxed">本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。</p>
             <div className="mt-3 text-sm text-gray-500 space-y-1">
-              <p>住所：〒465-0061 愛知県名古屋市名東区高針原2-1708 1Place cafe 2階</p>
+              <p>住所：〒481-0014 愛知県北名古屋市井瀬木五町100番地</p>
               <p>運営者：株式会社GROUND FLAG</p>
               <p>問い合わせ：0568-24-1061</p>
             </div>
