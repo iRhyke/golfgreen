@@ -1,9 +1,6 @@
 ### Git push（変更をVercelに反映）
 ```bash
-cd ~/Documents/GitHub/golfsarongreen
-git add .
-git commit -m "main: "
-git push
+
 ```
 ### プロトタイプにpush
 ```bash
@@ -32,6 +29,8 @@ git checkout main
 git checkout main
 git merge prototype-1
 git push
+
+
 
 # 
 では次の作業として、、、（ヘッダーとフッターをいじります。）
