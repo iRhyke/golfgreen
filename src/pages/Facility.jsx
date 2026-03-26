@@ -23,7 +23,7 @@ const facilities = [
   {
     icon: Shield,
     title: "完全プライベート個室",
-    description: "人目を気にせず、自分だけの練習に没頭できる完全個室。初心者の方もリラックスしてプレーをお楽しみください。",
+    description: "周囲の視線を気にせず、自分のスイングに没頭できる完全個室を完備。初心者の方もリラックスして練習を楽しめます。",
   },
 ];
 
@@ -59,14 +59,14 @@ export default function Facility() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold text-[#111111] mb-6">
-                妥協のない
+              <h2 className="text-3xl font-bold text-[#111111] mb-6 leading-tight">
+                上達を加速させる、
                 <br />
-                <span className="text-[#1B5E3B]">練習環境を、その手に。</span>
+                <span className="text-[#1B5E3B]">最高の練習環境。</span>
               </h2>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 ゴルフサロングリーン 高針インター店は、全室にGOLFZON社の最高級シミュレーター「VISION Plus」を採用。
-                24時間いつでも、最高のテクノロジーを活用した集中練習が可能です。
+                24時間365日、最新のテクノロジーを活用した集中力の高い練習が可能です。
               </p>
               <p className="text-gray-500 leading-relaxed">
                 「1Place cafe」の2階に位置する隠れ家のような空間で、初心者から上級者まで、すべてのゴルファーの情熱に応える環境を整えてお待ちしております。

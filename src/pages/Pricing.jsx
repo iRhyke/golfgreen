@@ -177,11 +177,11 @@ export default function Pricing() {
               <Info className="w-5 h-5 text-[#C8A96E] flex-shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-[#111111] mb-2">ご利用について</h3>
-                <ul className="text-gray-500 text-sm space-y-1.5 leading-relaxed">
-                  <li>・1枠あたりの利用時間は80分です</li>
-                  <li>・すべてのプランでGOLFZON VISION Plusをご利用いただけます</li>
-                  <li>・プランの変更は月単位で可能です</li>
-                  <li>・入会金・事務手数料については体験時にご説明いたします</li>
+                <ul className="text-gray-600 text-sm space-y-2 leading-relaxed">
+                  <li>・1枠あたりの利用時間は「80分」です。準備からお着替えまでゆったりお使いいただけます。</li>
+                  <li>・すべてのプランで個室の「VISION Plus」をご利用いただけます。</li>
+                  <li>・プラン変更は前月15日までのお申し出で、翌月から適用可能です。</li>
+                  <li>・入会時の初期費用等については、無料体験時にスタッフより詳しくご案内いたします。</li>
                 </ul>
               </div>
             </div>

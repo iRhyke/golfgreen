@@ -45,12 +45,11 @@ export default function SimulatorPreview() {
             <span className="text-[#C8A96E] text-sm font-semibold tracking-widest uppercase">Simulator</span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[#111111] leading-tight">
               GOLFZON
-              <br />
-              VISION Plus
-            </h2>
-            <p className="mt-6 text-gray-500 leading-relaxed">
-              GOLFZON社が誇る最高級シミュレーター。圧倒的な映像美と高精度なセンサー技術で、
-              まるで実際のコースにいるかのようなリアルな体験を提供します。
+            <br />
+            最高級モデルを<span className="text-[#C8A96E]">独占</span>。
+          </h2>
+            <p className="mt-6 text-gray-600 leading-relaxed">
+              プロも愛用する、シミュレーターゴルフの最高峰モデル。圧倒的な映像クオリティと正確なデータ分析で、練習からラウンドまで、ゴルフの楽しみを最大化させます。
             </p>
 
             <ul className="mt-8 space-y-4">
