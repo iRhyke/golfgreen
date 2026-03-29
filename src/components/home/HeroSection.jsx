@@ -44,14 +44,14 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <Link
               to="/trial"
-              className="group flex items-center gap-3 px-10 py-5 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-bold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-lg"
+              className="group flex items-center gap-3 px-8 py-4 bg-[#C8A96E] hover:bg-[#b8995e] text-white font-bold rounded-full transition-all hover:shadow-2xl hover:shadow-[#C8A96E]/30 text-lg"
             >
               無料体験を予約する
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/pricing"
-              className="flex items-center gap-2 px-8 py-5 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-all text-base"
+              className="flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-all text-base"
             >
               料金を見る
             </Link>
