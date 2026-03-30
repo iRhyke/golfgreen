@@ -35,9 +35,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            クーラーの効いた快適な空間で、GOLFZON最高級モデル「VISION Plus」を。
+            クーラーの効いた快適な空間で、GOLFZON最高級モデル
             <br className="hidden sm:block" />
-            最高級シミュレーター「VISION Plus」を心ゆくまで。
+            「VISION Plus」を心ゆくまで。
           </p>
 
           {/* 予約ボタン（大きく目立つように） */}
